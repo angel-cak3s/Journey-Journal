@@ -14,6 +14,11 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color.purple)
+            
+                Spacer()
+            
+            Text("The World says hello!")
+                .font(.largeTitle)
         }
         .padding()
     }
