@@ -6,24 +6,61 @@
 //
 
 import SwiftUI
-
+// root view
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello World!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(Color.purple)
-            
-                Spacer()
-            
-            Text("The World says hello!")
-                .font(.largeTitle)
+        NavigationStack{
+            // zstack for background image
+            ZStack {
+                // first layer = painting
+                Image("paper")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
+               
+                VStack(alignment: .leading) {
+                    Text("Welcome,")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                    Text("Username")
+                        .font(.system(size:50))
+                        .fontWeight(.bold)
+                        .padding(.bottom, 490.0)
+                }
+                VStack {
+                    NavigationLink(destination: Journals()) {
+                        Text("Journals")
+                            .foregroundColor(.white)
+                    }
+                    .frame(width: 300.0, height: 60.0)
+                    .background(.black)
+                    .cornerRadius(30.0)
+                    
+                    NavigationLink(destination: Scrapbooks()) {
+                            Text("Scrapbooks")
+                                .foregroundColor(.white)
+                        
+                    }
+                    .frame(width: 300.0, height: 60.0)
+                    .background(.black)
+                    .cornerRadius(30.0)
+                    
+                    NavigationLink(destination: DailyGoals()) {
+                        Text("Daily Goals")
+                            .foregroundColor(.white)
+                    }
+                    .frame(width: 300.0, height: 60.0)
+                    .background(.black)
+                    .cornerRadius(30.0)
+                }
+                .padding(.top, -30.0)
+                
+            }
+            .padding(.top, -90.0)
         }
-        .padding()
+        .accentColor(.black)
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
