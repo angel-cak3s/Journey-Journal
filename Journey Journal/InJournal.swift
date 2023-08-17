@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InJournal: View {
     @State private var name = ""
-    @State private var textTitle = "How's your day going?"
+    @State private var textTitle = ""
     
     var body: some View {
         
@@ -26,9 +26,13 @@ struct InJournal: View {
             
             VStack {
                 
-                Text("\(textTitle)")
+                Text("How's your day going?")
                     .font(.title)
                     .padding(.top,50)
+                
+                Text("\(textTitle)")
+                    .font(.title)
+                    .padding(.top,5)
                     .padding(.leading,35)
                     .padding(.trailing,35)
     
@@ -37,7 +41,7 @@ struct InJournal: View {
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .font(.title)
                     .border(Color.blue, width: 1)
-                    .padding(.top,500)
+                    .padding(.top,400)
                     .padding(.leading,20)
                     .padding(.trailing,20)
                 
