@@ -13,17 +13,25 @@ struct DailyGoals: View {
             entity: ToDo.entity(), sortDescriptors: [ NSSortDescriptor(keyPath: \ToDo.id, ascending: false) ])
     var toDoItems: FetchedResults<ToDo>
     var body: some View {
+        
         VStack {
             HStack {
                 // title of app
                 Text("Daily Goals")
                      .font(.system(size: 40))
-                     .fontWeight(.black)
+                     .fontWeight(.semibold)
+                     .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
+                
                 Spacer()
+                
                 Button(action: {
                     self.showNewTask = true
                 }) {
-                Text("+")
+                    Text("+")
+                        .font(.largeTitle)
+                        .foregroundColor(Color(red: 0.94, green: 0.56, blue: 0.35))
+                    
+                    //UIColor(red: 0.94, green: 0.56, blue: 0.35, alpha: 1)
                 }
             }
             .padding()

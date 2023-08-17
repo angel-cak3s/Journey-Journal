@@ -18,7 +18,7 @@ struct InJournal: View {
             Color(red: 0.79, green: 0.95, blue: 0.95)
                 .ignoresSafeArea()
             
-            Image("paper")
+            Image("paper1")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 450, height: 763)
@@ -28,6 +28,8 @@ struct InJournal: View {
                 
                 Text("How's your day going?")
                     .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color(red: 0.1, green: 0.45, blue: 0.47))
                     .padding(.top,50)
                 
                 Text("\(textTitle)")
@@ -40,26 +42,27 @@ struct InJournal: View {
                 TextField("", text: $name)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .font(.title)
-                    .border(Color.blue, width: 1)
-                    .padding(.top,400)
-                    .padding(.leading,20)
-                    .padding(.trailing,20)
+                    .border(Color(red: 0.16, green: 0.8, blue: 0.83), width: 1)
+                    .padding(.top,320)
+                    .padding(.leading,40)
+                    .padding(.trailing,40)
                 
                 
-                Button("Enter") {
+                Button("Enter  ☻   ") {
                     print(name)
                     textTitle = "\(name)"
+                    
                     
                 }
                 .padding()
                 
                 .font(.title2)
                 .buttonStyle(.borderedProminent)
-                .tint(.blue)
+                .tint(Color(red: 0.06, green: 0.77, blue: 0.77))
                 
                 }
             
-                
+            //
         }
     }
 }
