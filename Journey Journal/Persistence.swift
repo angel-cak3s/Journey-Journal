@@ -27,7 +27,7 @@ struct PersistenceController {
 //    }()
     let container: NSPersistentContainer
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "Wave5ToDoList")
+        container = NSPersistentContainer(name: "Journey_Journal")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
