@@ -10,6 +10,7 @@
 		BD95EB162A8D54DA003B5AAE /* Journals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95EB152A8D54DA003B5AAE /* Journals.swift */; };
 		BD95EB182A8D54FF003B5AAE /* Scrapbooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95EB172A8D54FF003B5AAE /* Scrapbooks.swift */; };
 		BD95EB1A2A8D5568003B5AAE /* DailyGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95EB192A8D5568003B5AAE /* DailyGoals.swift */; };
+		BDA528C02A8E8CCB00622AAF /* InJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA528BF2A8E8CCB00622AAF /* InJournal.swift */; };
 		BDBA46FD2A8BE68600F28F41 /* Journey_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA46FC2A8BE68600F28F41 /* Journey_JournalApp.swift */; };
 		BDBA46FF2A8BE68600F28F41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA46FE2A8BE68600F28F41 /* ContentView.swift */; };
 		BDBA47012A8BE68800F28F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBA47002A8BE68800F28F41 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		BD95EB152A8D54DA003B5AAE /* Journals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journals.swift; sourceTree = "<group>"; };
 		BD95EB172A8D54FF003B5AAE /* Scrapbooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrapbooks.swift; sourceTree = "<group>"; };
 		BD95EB192A8D5568003B5AAE /* DailyGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoals.swift; sourceTree = "<group>"; };
+		BDA528BF2A8E8CCB00622AAF /* InJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InJournal.swift; sourceTree = "<group>"; };
 		BDBA46F92A8BE68600F28F41 /* Journey Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journey Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBA46FC2A8BE68600F28F41 /* Journey_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey_JournalApp.swift; sourceTree = "<group>"; };
 		BDBA46FE2A8BE68600F28F41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				BD95EB192A8D5568003B5AAE /* DailyGoals.swift */,
 				BD95EB172A8D54FF003B5AAE /* Scrapbooks.swift */,
 				BD95EB152A8D54DA003B5AAE /* Journals.swift */,
+				BDA528BF2A8E8CCB00622AAF /* InJournal.swift */,
 				BDBA47002A8BE68800F28F41 /* Assets.xcassets */,
 				BDBA47022A8BE68800F28F41 /* Preview Content */,
 			);
@@ -150,6 +153,7 @@
 				BD95EB162A8D54DA003B5AAE /* Journals.swift in Sources */,
 				BDBA46FF2A8BE68600F28F41 /* ContentView.swift in Sources */,
 				BD95EB182A8D54FF003B5AAE /* Scrapbooks.swift in Sources */,
+				BDA528C02A8E8CCB00622AAF /* InJournal.swift in Sources */,
 				BDBA46FD2A8BE68600F28F41 /* Journey_JournalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
