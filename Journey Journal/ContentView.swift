@@ -8,6 +8,8 @@
 import SwiftUI
 // root view
 struct ContentView: View {
+    let persistenceController = PersistenceController.shared
+    
     var body: some View {
         NavigationStack{
             // zstack for background image
@@ -54,7 +56,8 @@ struct ContentView: View {
                     .background(.black)
                     .cornerRadius(30.0)
                     
-                    NavigationLink(destination: DailyGoals()) {
+                    NavigationLink(destination: DailyGoals().environment(\.managedObjectContext, persistenceController.container.viewContext)) {
+                        
                         Text("Daily Goals")
                             .foregroundColor(.white)
                     }
