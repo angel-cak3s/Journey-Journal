@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Scrapbooks: View {
+    @State private var dragAmount = CGSize.zero
+    @State private var dragAmount1 = CGSize.zero
+
     var body: some View {
         ZStack {
             // first layer = painting
@@ -19,7 +22,7 @@ struct Scrapbooks: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 350, height: 100)
                     .clipped()
-
+                
                 
                 Image("Scrapbook Paper")
                     .resizable()
@@ -27,28 +30,37 @@ struct Scrapbooks: View {
                     .clipped()
                     .padding()
                 
-            struct Stickers: View {
+                
+                
+                HStack{
                     
-                    @State private var dragAmount = CGSize.zero
-                    
-                    var name: String
-                    var index: Int
-                    
-                    var body: some View {
-                        
-                        Image(systemName: name)
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .offset(dragAmount)
-                            .zIndex(dragAmount == .zero ? 0 : 1)
-                            .gesture(
-                                DragGesture(coordinateSpace: .global)
-                                    .onChanged {
-                                        self.dragAmount = CGSize(width: $0.translation.width, height: $0.translation)
-                                    }
+                    Image("Butterfly Sticker")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount)
+                        .zIndex(dragAmount == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
                             
-                            )
-                    }
+                        )
+                    
+                    Image("Butterfly Sticker")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount1)
+                        .zIndex(dragAmount1 == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount1 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
+                            
+                        )
+                }
+            }
                 }
                 
                 
@@ -63,12 +75,10 @@ struct Scrapbooks: View {
             
             
         }
-    }
     
     struct Scrapbooks_Previews: PreviewProvider {
         static var previews: some View {
             Scrapbooks()
         }
     }
-}
 
