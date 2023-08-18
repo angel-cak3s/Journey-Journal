@@ -64,6 +64,16 @@ struct ContentView: View {
                     .frame(width: 300.0, height: 60.0)
                     .background(.black)
                     .cornerRadius(30.0)
+                    
+                    NavigationLink(destination: Info()) {
+                        Text("Art & Mental Health")
+                            .foregroundColor(.white)
+                    }
+                    .frame(width: 300.0, height: 60.0)
+                    .background(.black)
+                    .cornerRadius(30.0)
+                    
+                    
                 }
                 .padding(.top, -30.0)
                 
