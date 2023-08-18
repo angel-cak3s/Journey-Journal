@@ -25,21 +25,27 @@ struct ContentView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                     
-                    Text("Username")
+                    Text("Karlie Kloss")
                         .font(.system(size:50))
                         .fontWeight(.bold)
                         .padding(.bottom, 490.0)
                         .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                     
                     
+                    
+                }
+                .padding(.top,80)
+                
+                VStack {
+                    
                     Image("Title_Icon")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 130, height: 73)
                         .clipped()
-                }
-                
-                VStack {
+                        .padding(.bottom,15)
+                        .padding(.top,20)
+                    
                     NavigationLink(destination: Journals()) {
                         Text("Journals")
                             .foregroundColor(.white)
@@ -76,7 +82,7 @@ struct ContentView: View {
                     
                     
                 }
-                .padding(.top, -30.0)
+                .padding(.top, 80.0)
                 
             }
             .padding(.top, -90.0)
