@@ -10,6 +10,11 @@ import SwiftUI
 struct Scrapbooks: View {
     @State private var dragAmount = CGSize.zero
     @State private var dragAmount1 = CGSize.zero
+    @State private var dragAmount2 = CGSize.zero
+    @State private var dragAmount3 = CGSize.zero
+    @State private var dragAmount4 = CGSize.zero
+    @State private var dragAmount5 = CGSize.zero
+
 
     var body: some View {
         ZStack {
@@ -47,7 +52,7 @@ struct Scrapbooks: View {
                             
                         )
                     
-                    Image("Butterfly Sticker")
+                    Image("HK Sticker")
                         .resizable()
                         .frame(width: 80, height: 80)
                         .offset(dragAmount1)
@@ -59,7 +64,65 @@ struct Scrapbooks: View {
                                 }
                             
                         )
+                    
+                    Image("Strawb Sticker")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount2)
+                        .zIndex(dragAmount2 == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount2 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
+                            
+                        )
+                    
                 }
+                
+                HStack{
+                    
+                    Image("Butterfly Sticker")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount)
+                        .zIndex(dragAmount == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
+                            
+                        )
+                    
+                    Image("HK Sticker")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount1)
+                        .zIndex(dragAmount1 == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount1 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
+                            
+                        )
+                    
+                    Image("Strawb Sticker")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount2)
+                        .zIndex(dragAmount2 == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount2 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
+                            
+                        )
+                    
+                }
+                
             }
                 }
                 
