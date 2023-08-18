@@ -14,6 +14,10 @@ struct Scrapbooks: View {
     @State private var dragAmount3 = CGSize.zero
     @State private var dragAmount4 = CGSize.zero
     @State private var dragAmount5 = CGSize.zero
+    @State private var dragAmount6 = CGSize.zero
+    @State private var dragAmount7 = CGSize.zero
+
+
 
 
     var body: some View {
@@ -78,45 +82,71 @@ struct Scrapbooks: View {
                             
                         )
                     
+                    Image("Clover")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount6)
+                        .zIndex(dragAmount6 == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount6 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
+                            
+                        )
+                    
                 }
                 
                 HStack{
                     
-                    Image("Butterfly Sticker")
+                    Image("Ladybug")
                         .resizable()
                         .frame(width: 80, height: 80)
-                        .offset(dragAmount)
-                        .zIndex(dragAmount == .zero ? 0 : 1)
+                        .offset(dragAmount3)
+                        .zIndex(dragAmount3 == .zero ? 0 : 1)
                         .gesture(
                             DragGesture(coordinateSpace: .global)
                                 .onChanged {
-                                    self.dragAmount = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                    self.dragAmount3 = CGSize(width: $0.translation.width, height: $0.translation.height)
                                 }
                             
                         )
                     
-                    Image("HK Sticker")
+                    Image("Mushroom")
                         .resizable()
                         .frame(width: 80, height: 80)
-                        .offset(dragAmount1)
-                        .zIndex(dragAmount1 == .zero ? 0 : 1)
+                        .offset(dragAmount4)
+                        .zIndex(dragAmount4 == .zero ? 0 : 1)
                         .gesture(
                             DragGesture(coordinateSpace: .global)
                                 .onChanged {
-                                    self.dragAmount1 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                    self.dragAmount4 = CGSize(width: $0.translation.width, height: $0.translation.height)
                                 }
                             
                         )
                     
-                    Image("Strawb Sticker")
+                    Image("Cat")
                         .resizable()
                         .frame(width: 80, height: 80)
-                        .offset(dragAmount2)
-                        .zIndex(dragAmount2 == .zero ? 0 : 1)
+                        .offset(dragAmount5)
+                        .zIndex(dragAmount5 == .zero ? 0 : 1)
                         .gesture(
                             DragGesture(coordinateSpace: .global)
                                 .onChanged {
-                                    self.dragAmount2 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                    self.dragAmount5 = CGSize(width: $0.translation.width, height: $0.translation.height)
+                                }
+                            
+                        )
+                    
+                    Image("Heart")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .offset(dragAmount7)
+                        .zIndex(dragAmount7 == .zero ? 0 : 1)
+                        .gesture(
+                            DragGesture(coordinateSpace: .global)
+                                .onChanged {
+                                    self.dragAmount7 = CGSize(width: $0.translation.width, height: $0.translation.height)
                                 }
                             
                         )
