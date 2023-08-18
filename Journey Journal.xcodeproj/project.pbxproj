@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD6D91CE2A8F0E77006172E6 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		BD6D91CE2A8F0E77006172E6 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 2; path = Info.swift; sourceTree = "<group>"; };
 		BD95EB152A8D54DA003B5AAE /* Journals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journals.swift; sourceTree = "<group>"; };
 		BD95EB172A8D54FF003B5AAE /* Scrapbooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrapbooks.swift; sourceTree = "<group>"; };
 		BD95EB192A8D5568003B5AAE /* DailyGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoals.swift; sourceTree = "<group>"; };

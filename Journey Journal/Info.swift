@@ -18,6 +18,9 @@ struct Info: View {
                 Text("Art & Mental Health")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
+                
+                Text("How Art can improve your Mental Health")
+
             }
         }
     }
