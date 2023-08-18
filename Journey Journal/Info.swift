@@ -17,33 +17,53 @@ struct Info: View {
                 
                 Text("Art & Mental Health")
                     .font(.largeTitle)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                 
                 Text("How Art can improve your Mental Health \n")
+                    .foregroundColor(Color(red: 0.2667, green: 0.1882, blue: 0))
                 
                 Text("Stress Relief")
-                    .fontWeight(.semibold)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                 
                 Text ("Studies have shown that drawing, doodling, coloring, and simply creating something for 20+ minutes reduces cortisol, which helps regulate your body’s response to stress. \n")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(red: 0.2667, green: 0.1882, blue: 0))
+                
                 
                      
                 Text("Boosts Self Esteem")
-                    .fontWeight(.semibold)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                       
                 Text ("Creativity and the practice of art can build a sense of accomplishment for all ages, as it 'makes us feel good about ourselves' and validates our  our ability to turn unique ideas into something physical \n")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(red: 0.2667, green: 0.1882, blue: 0))
+                
                       
                 Text ("Healing")
-                    .fontWeight(.semibold)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                 
                 Text ("It has been proven by much research that art making can help in processing pain, and provide a direct connection between to mind and the body to further aid to healing process \n")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(red: 0.2667, green: 0.1882, blue: 0))
+                
                       
                 Text ("Letting Go")
-                    .fontWeight(.semibold)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                 
                 Text ("Expressive art, such as visual arts, music, and dance, can help users laugh, let go, and relax, thus decreasing depression, anxiety, and stress.")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(red: 0.2667, green: 0.1882, blue: 0))
+                
                     
 
             }
+            .padding(.leading,15)
+            .padding(.trailing,15)
         }
     }
 }
