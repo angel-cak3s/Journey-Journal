@@ -31,14 +31,15 @@ struct ContentView: View {
                         .padding(.bottom, 490.0)
                         .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                     
+                    
+                    Image("Title_Icon")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 130, height: 73)
+                        .clipped()
+                }
                 
-                Image("Title_Icon")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 130, height: 73)
-                    .clipped()
-                
-                
+                VStack {
                     NavigationLink(destination: Journals()) {
                         Text("Journals")
                             .foregroundColor(.white)
