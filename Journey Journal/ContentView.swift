@@ -37,7 +37,6 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 130, height: 73)
                     .clipped()
-                    .padding([.leading, .bottom], 30)
                 
                 
                     NavigationLink(destination: Journals()) {
