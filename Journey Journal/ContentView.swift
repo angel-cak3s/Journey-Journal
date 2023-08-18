@@ -17,7 +17,7 @@ struct ContentView: View {
                 // first layer = painting
                 Color(red: 1, green: 0.98, blue: 0.96)
                     .ignoresSafeArea()
-               
+            
                 VStack(alignment: .leading) {
                     
                     Text("Welcome,")
@@ -31,14 +31,15 @@ struct ContentView: View {
                         .padding(.bottom, 490.0)
                         .foregroundColor(Color(red: 0.88, green: 0.43, blue: 0.43))
                     
-                    Image("Title_Icon")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 130, height: 73)
-                        .clipped()
-                    
-                }
-                VStack {
+                
+                Image("Title_Icon")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 130, height: 73)
+                    .clipped()
+                    .padding([.leading, .bottom], 30)
+                
+                
                     NavigationLink(destination: Journals()) {
                         Text("Journals")
                             .foregroundColor(.white)
